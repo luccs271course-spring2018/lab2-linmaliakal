@@ -15,6 +15,14 @@ public class TestSearch {
   }
 
   // TODO makeListFixture
+  Team[] makeListFixture(final int size) {
+    final Team[] list = new Team[size];
+    for (int i = 0; i < size; i++) {
+      final String s = Integer.toString(i);
+      list[i]= new Team("Team " + s, "Coach " + s, i * 100 + 50);
+    }
+    return list;
+  }
 
   @Test
   public void testFindPositionArray0() {
@@ -35,8 +43,30 @@ public class TestSearch {
   }
   
   // TODO: testFindPositionList0, 10s, 10f
+  @Test
+  public void testFindPositionList0() {
+  
+  }
+  
+  @Test
+  public void testFindPositionList10s() {
+    
+  }
+  
+  @Test
+  public void testFindPositionList10f() {
+    
+  }
   
   // TODO: testFindMinFundingArray for several sizes and scenarios
+  @Test
+  public void testFindMinFundingArray() {
+    
+  }
 
   // TODO: testFindMinFundingArrayFast for several sizes and scenarios
+  @Test
+  public void testFindMinFundingArrayFast() {
+    
+  }
 }

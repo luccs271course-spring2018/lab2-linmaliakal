@@ -6,7 +6,7 @@ Work in teams of two
 
 # Objectives
 
-An understanding of the following concepts and techniques:
+An understanding of the following concept`s and techniques:
 
 - entity objects
 - linear search
