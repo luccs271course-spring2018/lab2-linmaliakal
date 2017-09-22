@@ -16,8 +16,8 @@ public class Team {
     if (name == null) {
       throw new IllegalArgumentException("name is null");
     }
-    // TODO validity checking for headcoach
-    // TODO validity checking for funding
+    // DONE validity checking for headcoach
+    // DONE validity checking for funding
     this.name = name;
     // DONE complete this constructor
     this.headcoach = headcoach;

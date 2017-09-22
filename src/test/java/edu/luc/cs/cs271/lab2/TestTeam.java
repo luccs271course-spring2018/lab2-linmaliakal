@@ -14,9 +14,8 @@ public class TestTeam {
     try {
       new Team(null, "Klinsmann", 500);
       fail("should have thrown IllegalArgumentException");
-    } catch (final Throwable ex) {
+    } catch (final Throwable ex)
       // if we landed here, we're good!
-    }
   }
   
   // DONE testConstructorValidHeadcoach
@@ -25,7 +24,7 @@ public class TestTeam {
     try {
       new Team("USA", null, 500);
       fail("should have thrown IllegalArgumentException");
-    } catch (final Throwable ex)
+    } catch (final Throwable ex) 
   }
   
   // DONE testConstructorValidFunding
@@ -51,6 +50,7 @@ public class TestTeam {
     final Team t = makeTeamFixture("USA", headcoach, 500);
     assertEquals(headcoach, t.getHeadcoach);
   }
+  
   // DONE testGetFunding
   @Test
   public void testGetFunding() {
