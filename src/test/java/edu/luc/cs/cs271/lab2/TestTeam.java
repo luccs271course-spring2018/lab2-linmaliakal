@@ -14,8 +14,9 @@ public class TestTeam {
     try {
       new Team(null, "Klinsmann", 500);
       fail("should have thrown IllegalArgumentException");
-    } catch (final Throwable ex)
+    } catch (final Throwable ex) {
       // if we landed here, we're good!
+    }
   }
   
   // DONE testConstructorValidHeadcoach
@@ -24,7 +25,9 @@ public class TestTeam {
     try {
       new Team("USA", null, 500);
       fail("should have thrown IllegalArgumentException");
-    } catch (final Throwable ex) 
+    } catch (final Throwable ex) {
+      // needed extra brackets
+    }
   }
   
   // DONE testConstructorValidFunding
@@ -33,7 +36,9 @@ public class TestTeam {
     try {
       new Team("USA", "Klinsmann", 0);
       fail("should have thrown IllegalArgumentException");
-    } catch (final Throwable ex)
+    } catch (final Throwable ex) {
+      // needed extra brackets
+    }
   }
 
   @Test
@@ -54,7 +59,7 @@ public class TestTeam {
   // DONE testGetFunding
   @Test
   public void testGetFunding() {
-    final String funding = "500";
+    final int funding = 500;
     final Team t = makeTeamFixture("USA", "Klinsmann", funding);
     assertEquals(funding, t.getFunding());
   }
