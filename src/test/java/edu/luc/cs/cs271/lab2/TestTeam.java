@@ -31,7 +31,7 @@ public class TestTeam {
   @Test
   public void testConstructorValidFunding(){
     try {
-      new Team("USA", "Klinsmann", null);
+      new Team("USA", "Klinsmann", 0);
       fail("should have thrown IllegalArgumentException");
     } catch (final Throwable ex)
   }
@@ -48,7 +48,7 @@ public class TestTeam {
   public void testGetHeadcoach() {
     final String headcoach = "Klinsmann";
     final Team t = makeTeamFixture("USA", headcoach, 500);
-    assertEquals(headcoach, t.getHeadcoach);
+    assertEquals(headcoach, t.getHeadcoach());
   }
   
   // DONE testGetFunding
@@ -56,6 +56,6 @@ public class TestTeam {
   public void testGetFunding() {
     final String funding = "500";
     final Team t = makeTeamFixture("USA", "Klinsmann", funding);
-    assertEquals(funding, t.getFunding);
+    assertEquals(funding, t.getFunding());
   }
 }
