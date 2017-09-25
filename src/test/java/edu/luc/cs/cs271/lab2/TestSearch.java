@@ -1,5 +1,6 @@
 package edu.luc.cs.cs271.lab2;
 
+import java.util.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
