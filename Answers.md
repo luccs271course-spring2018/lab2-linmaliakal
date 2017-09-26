@@ -1,6 +1,10 @@
 # Answers
 - What is the complexity of each of the four search methods in terms of array or list size n?
-
+The complexity of the first method findTeamPosition (array) would be O(n) because of the one loop in terms of n it goes through.
+The complexity of the second same method, but for a list, would be O(n).
+The complexity of the third method findTeamMinFunding (array) would also be O(n).
+The complexity of the fourth same method, but for a list, would be O(log(n)) because the running time is proportional to the amount
+of time n can be divided by two as seen in the while loop.
 
 - What happens in the case of binary search if the array is not sorted?
 The binary search goes in order based on the array being presorted, so if the array is not already
@@ -17,5 +21,7 @@ or altered in other methods or in the same method itself. It will always have th
 to it initially.
 
 - What are alternatives to using `Optional` and how do they compare
-The different alternatives to using `Optional` include ...
+The different alternatives to using `Optional` can include using loops and declaring variables
+as null to account for the other options that would be possible, however using Optional makes
+that process much easier and quicker, avoiding having to use the additional lines of code.
 
